@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Single Post</title>
+</head>
+<body>
+    
+    <!-- Header -->
+    <header>
+        <div class="container header-container px-1">
+            <h1 onclick="redirect()" id="logoId">
+                BDevs<span class="primary-color">Desk</span>
+            </h1>
+            <a href="add_question.html" class="btn-primary"><i class="fa fa-plus"></i> Create Ticket</a>
+        </div>
+    </header>
+
+    <!-- Section: post -->
+    <section id="query">
+        <div class="container query-container px-1">
+            <div class="query-card">
+                <div>
+                    <p>Full Name: John Doe</p>
+                    <p>Topic: PHP</p>
+                </div>
+                <p>Description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, qui?</p>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        function redirect() {
+            window.location= 'index.html';
+        }
+        document.querySelector("#logoId").style.cursor= 'pointer';
+    </script>
+
+</body>
+</html>
