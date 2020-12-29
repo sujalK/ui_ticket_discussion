@@ -8,14 +8,14 @@
     <title>Help Desk</title>
 </head>
 <body>
-    
+
     <!-- Header -->
     <header>
         <div class="container header-container px-1">
-            <h1>
+            <h1 onclick="redirect()" id="logoId">
                 BDevs<span class="primary-color">Desk</span>
             </h1>
-            <a class="btn-primary"><i class="fa fa-plus"></i> Create Ticket</a>
+            <a href="add_question.html" class="btn-primary"><i class="fa fa-plus"></i> Create Ticket</a>
         </div>
     </header>
 
@@ -41,10 +41,10 @@
         <div class="container tags-container">
             <p>Popular Tags</p>
             <div class="tags">
-                <a href="#">Javascript</a>
-                <a href="#">PHP</a>
-                <a href="#">Python</a>
-                <a href="#">MySQL</a>
+                <a href="single_post.html">Javascript</a>
+                <a href="single_post.html">PHP</a>
+                <a href="single_post.html">Python</a>
+                <a href="single_post.html">MySQL</a>
             </div>
         </div>
     </section>
@@ -58,19 +58,19 @@
                 <div class="topic-question">
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">How to connect to the database ?</a>
+                        <a href="single_post.html">How to connect to the database ?</a>
                     </div>
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">How to hash the password ?</a>
+                        <a href="single_post.html">How to hash the password ?</a>
                     </div>
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">How to upload files using PHP ?</a>
+                        <a href="single_post.html">How to upload files using PHP ?</a>
                     </div>
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">How to prevent SQL injection in PHP ?</a>
+                        <a href="single_post.html">How to prevent SQL injection in PHP ?</a>
                     </div>
                 </div>
             </div>
@@ -80,19 +80,19 @@
                 <div class="topic-question">
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">Why is Javascript a scripting language ?</a>
+                        <a href="single_post.html">Why is Javascript a scripting language ?</a>
                     </div>
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">Designing apps using Vanilla JS</a>
+                        <a href="single_post.html">Designing apps using Vanilla JS</a>
                     </div>
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">Performance tips in Javascript</a>
+                        <a href="single_post.html">Performance tips in Javascript</a>
                     </div>
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">Scope and closure in Javascript</a>
+                        <a href="single_post.html">Scope and closure in Javascript</a>
                     </div>
                 </div>
             </div>
@@ -102,19 +102,19 @@
                 <div class="topic-question">
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">Python and Machine Learning</a>
+                        <a href="single_post.html">Python and Machine Learning</a>
                     </div>
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">Learning to develop web apps with Django</a>
+                        <a href="single_post.html">Learning to develop web apps with Django</a>
                     </div>
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">Python GUI with Tkinter</a>
+                        <a href="single_post.html">Python GUI with Tkinter</a>
                     </div>
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">Object Oriented Programming in Python3</a>
+                        <a href="single_post.html">Object Oriented Programming in Python3</a>
                     </div>
                 </div>
             </div>
@@ -124,19 +124,19 @@
                 <div class="topic-question">
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">Transactions using MySQL (in a workbench env.)</a>
+                        <a href="single_post.html">Transactions using MySQL (in a workbench env.)</a>
                     </div>
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">MySQL views</a>
+                        <a href="single_post.html">MySQL views</a>
                     </div>
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">Loops, if conditionals in MySQL</a>
+                        <a href="single_post.html">Loops, if conditionals in MySQL</a>
                     </div>
                     <div>
                         <i class="fa fa-book"></i>
-                        <a href="#">MySQL practice tests</a>
+                        <a href="single_post.html">MySQL practice tests</a>
                     </div>
                 </div>
             </div>
@@ -148,5 +148,11 @@
         Copyright &copy; 2020, BDevsDesk , All rights reserved.
     </footer>
 
+    <script>
+        function redirect() {
+            window.location= 'index.html';
+        }
+        document.querySelector("#logoId").style.cursor= 'pointer';
+    </script>
 </body>
 </html>
